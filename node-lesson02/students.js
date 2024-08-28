@@ -10,6 +10,7 @@ module.exports =
   {
      "firstName" : "John",
     "lastName" : "Doe",
+     "age":23,
   },
    {
      "firstName" : "Adam",

@@ -4,13 +4,12 @@
 4- Assign the parsed content to a variable student
 */
 const student = require('./students');
-console.log(student("age", 23));
+console.log(student);
 /*
 5- Modify the array based on the following instructions:
 6- Add new element age to John Doe
 key => age
 value => 23
-
 7- Iterate over all key-value pairs and test to see if the age exists in each student.
 hasOwnProperty should be true for John, but false for Adam.
 
