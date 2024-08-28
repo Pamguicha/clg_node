@@ -1,30 +1,11 @@
 //todo
 /* 1- Create a node project folder with a student project name. DONE
 2- Verify that the package.json file exists. DONE
-3- Use module.exports to export an array of students.
-For example:
-[
-   {
-
-           "firstName": "John",
-
-           "lastName": "Doe"
-
-          },
-
-          {
-
-           "firstName": "Adam",
-
-           "lastName": "Smith"       
-
-          }
-
-       ]
-
- 
-
 4- Assign the parsed content to a variable student
+*/
+const student = require('./students');
+console.log(student("age", 23));
+/*
 5- Modify the array based on the following instructions:
 6- Add new element age to John Doe
 key => age
