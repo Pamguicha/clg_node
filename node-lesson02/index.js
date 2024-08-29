@@ -1,29 +1,20 @@
 //todo
 /* 1- Create a node project folder with a student project name. DONE
 2- Verify that the package.json file exists. DONE
-4- Assign the parsed content to a variable student
+3- Use module.exports to export an array of students.DONE
+4- Assign the parsed content to a variable student DONE
+5- The result should be displayed in the terminal.
 */
-const student = require('./students');
-console.log(student);
-/*
-5- Modify the array based on the following instructions:
-6- Add new element age to John Doe
-key => age
-value => 23
-7- Iterate over all key-value pairs and test to see if the age exists in each student.
-hasOwnProperty should be true for John, but false for Adam.
+const students = require('./students');
 
-8- The result should be displayed in the terminal.
-
-9- Exit Node.js  */
-
-/*learning objetives 
-Use JSON objects in a Node.js application
-
-Practise the use of require() function in the code
-
-Access and modify JSON objects
+for (var i=0; i<students.length; i++) {
+ if(students[i].hasOwnProperty("age")) {
+console.log(`${students[i].firstName} has an age property: true`);
+ } else {
+console.log(`${students[i].firstName} has an age property: false`);
+ } 
+}
+    
+process.exit(); // use to stop the loop and Node is terminated.
 
 
-
-*/
