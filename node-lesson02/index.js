@@ -7,6 +7,12 @@
 */
 const students = require('./students');
 
+students.forEach((student) => {
+  if (student.firstName === "John") {
+    student.age = 23;
+  }
+});
+
 for (var i=0; i<students.length; i++) {
  if(students[i].hasOwnProperty("age")) {
 console.log(`${students[i].firstName} has an age property: true`);
