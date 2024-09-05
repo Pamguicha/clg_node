@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1725511762197" clover="3.2.0">
-  <project timestamp="1725511762197" name="All files">
+<coverage generated="1725512429868" clover="3.2.0">
+  <project timestamp="1725512429868" name="All files">
     <metrics statements="5" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="2" elements="8" coveredelements="6" complexity="0" loc="5" ncloc="5" packages="1" files="1" classes="1"/>
     <file name="calculate.js" path="/Users/pamelamardones/clg_node/node-lesson03/calculate.js">
       <metrics statements="5" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="2"/>
