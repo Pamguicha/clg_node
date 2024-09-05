@@ -14,5 +14,8 @@ describe("Unit test validating addition of 2 numbers", () => {
     expect(mathOperations.subtract(4,2)).toBe(2);
   });
 
+if('Should return a multiplication', () => {
+  expect(mathOperations.multiply(12,4)).toBe(48); 
+});
 
 });
