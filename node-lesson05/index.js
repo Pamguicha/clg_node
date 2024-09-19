@@ -28,7 +28,7 @@ storyline: "Lee Jong-Su, a young author, meets and falls for his childhood frien
 
 ];
 
-const getMovies = (movies) => {
+const getMovies = () => {
 
   //enclosed in a setTimeout function
 setTimeout (() => {
@@ -60,8 +60,16 @@ TODO Write an init() function that calls createMovies() and getMovies() but getM
 TODO Also include error handling if possible. 
 */
 
-function init() {
-createMovies();
-getMovies();
+async function init() {
+  try {
+    if(createMovies) {
+       const movieResult = await getMovies();
+      console.log('This movie was added:', movieResult);
+    } else {
+      throw new Error('Movie not found');
+    }
+  } catch(error) {
+  console.log('Error', error.message);
+  }
 }
 init();
