@@ -45,7 +45,7 @@ TODO Add another function called createMovies(). This function fetches an argume
 */
 
 const createMovies = (movie) => {
-  return new promise ((resolve, reject) => {
+  return new Promise ((resolve, reject) => {
     setTimeout(() => {
      movies.push(movie);
      resolve(movie);
@@ -62,14 +62,18 @@ TODO Also include error handling if possible.
 
 async function init() {
   try {
-    if(createMovies) {
-       const movieResult = await getMovies();
+    let newMovie = {
+      title: "Titanic",
+      storyline: "Leonardo Di Caprio dies in the end"
+    };
+       const createMovieResult = await createMovies(newMovie);
+      console.log('This movie was added:', createMovieResult);
+
+      const movieResult = await getMovies();
       console.log('This movie was added:', movieResult);
-    } else {
-      throw new Error('Movie not found');
-    }
   } catch(error) {
   console.log('Error', error.message);
   }
 }
 init();
+
