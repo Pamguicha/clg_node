@@ -30,7 +30,7 @@ app.put('/api/books/:title', (req, res) => {
   const book = books.find(bookFound => bookFound.Title === title );
   
   if (book) {
-    book.Author = author; // Modify the author
+    book.Author = author; 
     book.Title = title;
     return res.send(`Book updated: ${title} by ${author}`);
   } else {
@@ -38,6 +38,7 @@ app.put('/api/books/:title', (req, res) => {
   }
 });
 
+// type in postman: http://localhost:3000/api/books/Harry%20Potter
 
 
 app.listen(3000, () => console.log('server started'));
